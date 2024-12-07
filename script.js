@@ -87,7 +87,7 @@ function tampilkanDaftar() {
 function hapusItem(index) {
   const daftarBelanja = JSON.parse(localStorage.getItem("daftarBelanja")) || [];
   const checkedItems = JSON.parse(localStorage.getItem("checkedItems")) || [];
-  const hapusItem = confirm("Apakah anda yakim ingin menghapus item ini?");
+  const hapusItem = confirm("Apakah anda yakin ingin menghapus item ini?");
 
   if (hapusItem) {
     daftarBelanja.splice(index, 1);
