@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Belanja</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://gdb.voanews.com/b20bfdff-94d6-4587-aa16-3c85d43eb022_w1080_h608_s.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: white">Daftar Belanja</h1>
+    <div class="daftar-container">
+      <ul id="daftar"></ul>
+    </div>
+
+    <button onclick="hapusSemua()" class="hapusSemua-btn">Hapus Semua</button>
+    <button onclick="kembali()" class="kembali-btn">Kembali ke input</button>
+  </body>
+  <script src="script.js"></script>
+</html>
